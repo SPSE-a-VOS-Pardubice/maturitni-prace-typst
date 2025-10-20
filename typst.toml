@@ -1,0 +1,9 @@
+[package]
+name = "spse_maturitni_prace"
+version = "1.0.0"
+entrypoint = "main.typ"
+authors = ["Vojtěch Fošnár"]
+license = "Unlicense"
+description = ""
+
+[tool.utpm]
