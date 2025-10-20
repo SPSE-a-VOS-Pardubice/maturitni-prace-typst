@@ -1,5 +1,5 @@
 #import "pages/annotation.typ": annotation_pages
-#import "pages/assignment.typ": assignment_page
+#import "pages/assignment.typ": assignment_pages
 #import "pages/author_declaration.typ": author_declaration_page
 #import "pages/introduction.typ": introduction_page
 #import "pages/title_page.typ": title_page
@@ -12,14 +12,6 @@
   title: none,
   date: none,
   author: none,
-  annotation: none,
-  program: none,
-  school_year: none,
-  class: none,
-  lead: none,
-  lead_workplace: none,
-  assignment: none,
-  assignment_points: none,
   annotations: none,
   introduction: none,
   body,
@@ -29,7 +21,7 @@
     margin: (top: 25mm, left: 30mm, right: 20mm, bottom: 25mm)
   )
   set text(
-    size: 12pt,
+    size: 12pt + 1pt, // recommended 12pt can give 83 letters/line, this gives ~75
     region: "cz",
     lang: "cz"
   )
@@ -49,17 +41,7 @@
 
   author_declaration_page()
 
-  assignment_page(
-    program: program,
-    school_year: school_year,
-    class: class,
-    author: author,
-    title: title,
-    lead: lead,
-    lead_workplace: lead_workplace,
-    assignment: assignment,
-    points: assignment_points
-  )
+  assignment_pages()
 
   annotation_pages(content: annotations)
 

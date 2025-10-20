@@ -1,16 +1,5 @@
 
-#let assignment_page(
-  program: none,
-  school_year: none,
-  class: none,
-  author: none,
-  title: none,
-  lead: none,
-  lead_workplace: none,
-  assignment: none,
-  points: none
-) = {
-  pagebreak(weak: true)
-  "zadani"
-  pagebreak(weak: true)
+#let assignment_pages() = {
+  // according to the Word template distributed to the students, the assignment section will span 2 pages, and students are not supposed to print it themselves
+  counter(page).update(v => v + 2)
 }
