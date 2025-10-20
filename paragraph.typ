@@ -4,15 +4,21 @@
 // line height + 6pt
 #let spacing = leading + 6pt
 
-#let setup_paragraph(body) = {
+#let setup_paragraph_spacing(body) = {
+  set par(
+    spacing: spacing,
+    leading: leading,
+    justify: true
+  )
+  body
+}
+
+#let setup_paragraph_indent(body) = {
   set par(
     first-line-indent: (
       all: true,
       amount: 1cm
-    ),
-    spacing: spacing,
-    leading: leading,
-    justify: true
+    )
   )
   body
 }

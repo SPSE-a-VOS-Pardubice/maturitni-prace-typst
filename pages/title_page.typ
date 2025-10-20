@@ -12,11 +12,11 @@
 
   "Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice"
   v(2cm)
-  text(18pt, weight: "bold", school)
+  text(16pt, weight: "bold", upper(school))
   v(1fr)
-  text(18pt, weight: "bold", subject)
+  text(16pt, weight: "bold", subject)
   v(1cm)
-  text(18pt, weight: "bold", title)
+  text(16pt, weight: "bold", title)
   v(1fr)
   box([
     #text(14pt, date)

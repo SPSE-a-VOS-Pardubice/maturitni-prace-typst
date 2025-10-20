@@ -4,7 +4,7 @@
 #import "pages/introduction.typ": introduction_page
 #import "pages/title_page.typ": title_page
 #import "headings.typ": setup_headings
-#import "paragraph.typ": setup_paragraph
+#import "paragraph.typ": setup_paragraph_indent, setup_paragraph_spacing
 
 #let project(
   school: none,
@@ -22,10 +22,9 @@
   )
   set text(
     size: 12pt + 1pt, // recommended 12pt can give 83 letters/line, this gives ~75
-    region: "cz",
-    lang: "cz"
+    lang: "cs",
+    region: "cz"
   )
-  set smartquote(quotes: "„“") // typst does not support Czech quotes
   // auto insert non-breaking space according to Czech language rules
   show regex(" [aAkKiIuUsSoOvV] " ): it => [ #it.text.trim()~]
 
@@ -37,7 +36,7 @@
     author: author
   )
 
-  show: setup_paragraph
+  show: setup_paragraph_spacing
 
   author_declaration_page()
 
@@ -49,6 +48,7 @@
     title: "Obsah"
   )
 
+  show: setup_paragraph_indent
   show: setup_headings
   set page(numbering: "1")
 

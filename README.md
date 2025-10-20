@@ -7,7 +7,7 @@ Odpovídající oficiální specifikaci. ([link](https://www.spse.cz/download/za
   - [x] 30–35 řádků na stránku
   - [x] 60–85 znaků na řádek
 - [x] Vzhled stránek
-  - [x] Okraje stránek (top: 25mm, left: 30mm, right: 20mm, bottom: 25mm)
+  - [x] Okraje stránek
   - [x] Číslování stránek
 - [x] Řazení jednotlivých listů práce
   - [x] Titulní list
