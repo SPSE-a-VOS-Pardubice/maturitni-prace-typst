@@ -1,4 +1,3 @@
-
 #let T = (
   "cs": (
     annotation: "Anotace",
