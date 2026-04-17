@@ -2,12 +2,12 @@
 #let T = (
   "cs": (
     annotation: "Anotace",
-    keywords: "Klíčová slova"
+    keywords: "Klíčová slova",
   ),
   "en": (
     annotation: "Annotation",
-    keywords: "Keywords"
-  )
+    keywords: "Keywords",
+  ),
 )
 
 #let _page(language: none, content: none) = [
@@ -25,7 +25,7 @@
 
 
 #let annotation_pages(
-  content: none
+  content: none,
 ) = {
   for (language, content) in content.pairs() {
     pagebreak(weak: true)

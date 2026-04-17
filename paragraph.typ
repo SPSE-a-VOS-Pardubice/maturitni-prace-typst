@@ -8,7 +8,7 @@
   set par(
     spacing: spacing,
     leading: leading,
-    justify: true
+    justify: true,
   )
   body
 }
@@ -17,8 +17,8 @@
   set par(
     first-line-indent: (
       all: true,
-      amount: 1cm
-    )
+      amount: 1cm,
+    ),
   )
   body
 }
